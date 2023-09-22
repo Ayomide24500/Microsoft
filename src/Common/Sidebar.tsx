@@ -180,7 +180,7 @@ align-items: center;
 const Menu = styled.div`
 height: 50px;
 width: 100%;
-background-color: white;
+/* background-color: blue; */
 padding-left: 20px;
 font-size: 22px;
 `

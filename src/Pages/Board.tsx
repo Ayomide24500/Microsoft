@@ -1,25 +1,18 @@
-// import react from "react"
-import styled from "styled-components";
+import styled from "styled-components"
 
-interface Sidebarprops {
-  isOpen: boolean;
-  toggleSidebar: () => void;
-}
-const Sidebar: React.FC<Sidebarprops> = ({isOpen, toggleSidebar}) => {
+const Board = () => {
   return (
-    <div className={`sidebar ${isOpen ? 'open' : ''}`}>
-    <Button onClick={toggleSidebar}>Toggle Sidebar</Button>
-    <ul>
-      <li>Item</li>
-      <li>Item</li>
-      <li>Item</li>
-    </ul>
+    <div>
+      <Boarder>
+        
+      </Boarder>
     </div>
-  );
-};
-export default Sidebar
-const Button = styled.button`
-  width: 100px;
-  height: 100px;
-  background: orange;
+  )
+}
+export default Board
+const Boarder = styled.div`
+  width: 100%;
+  height: 700px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: aqua;
 `
